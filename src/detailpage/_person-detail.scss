@@ -1,0 +1,62 @@
+* {
+  box-sizing: border-box;
+
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.body {
+  .phone {
+    height: 435px;
+    width: 290px;
+
+    margin-top: 90px;
+    margin-left: 572px;
+    margin-right: 572px;
+
+    padding: 35px;
+
+    border: 2px solid;
+    border-radius: 20px;
+
+    .profile-photo {
+        width: 40px;
+        height: 40px;
+
+        margin-bottom: 30px;
+
+        border-radius: 20px;
+      }
+
+      .telephone {
+        position: absolute;
+
+        margin-left: 144px;
+        margin-top: 2px;
+      }
+
+    p {
+      margin-block-start: 0;
+      margin-block-end: 0;
+    }
+
+    hr {
+      margin-top: 3px;
+    }
+
+    .edit-delete {
+      margin-top: 50px;
+
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr;
+
+      .edit {
+        align-self: center;
+      }
+
+      .delete {
+        justify-self: end;
+      }
+    }
+  }
+}

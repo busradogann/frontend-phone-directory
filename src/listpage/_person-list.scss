@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+.body {
+  .phone {
+    height: 435px;
+    width: 290px;
+
+    margin-top: 90px;
+    margin-left: 572px;
+    margin-right: 572px;
+
+    padding: 35px;
+
+    border: 2px solid;
+    border-radius: 20px;
+
+    h5 {
+      margin-bottom: 30px;
+
+      font-family: 'Michroma', sans-serif;
+      font-size: 16px;
+      text-align: center;
+    }
+
+    .person {
+      margin-bottom: 10px;
+
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 5px;
+
+      text-decoration: none;
+
+      font-family: 'Josefin Sans', sans-serif;
+      font-size: 18px;
+      color: #44BBBD;
+
+      img {
+        width: 40px;
+        height: 40px;
+
+        border-radius: 20px;
+      }
+
+      p {
+        margin-block-start: 0;
+        margin-block-end: 0;
+
+        align-self: center;
+      }
+    }
+    .plus {
+      position: absolute;
+      margin-top: 200px;
+      margin-left: 160px;
+    }
+  }
+}

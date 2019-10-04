@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import { BrowserRouter, Switch, Route } from "react-router-dom";
+
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import PersonList from "./listpage/PersonList";
+import PersonDetail from "./detailpage/PersonDetail";
+import PersonAdd from "./addpage/PersonAdd";
+import PersonEdit from "./editpage/PersonEdit";
 
-export default App;
+
+export default class App extends Component {
+  render() {
+      return (
+          <BrowserRouter>
+              <Switch>
+                  <Route exact path={"/persons"} component={PersonList}/>
+                  <Route strict exact path={"/persons/:id"} component={PersonDetail}/>
+                  <Route strict exact path={"/persons/add/"} component={PersonAdd}/>
+                  <Route strict exact path={"/persons/:id/edit"} component={PersonEdit}/>
+              </Switch>
+          </BrowserRouter>
+      );
+  }
+}
